@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title></title>
+ <link href="http://localhost:4000/atom.xml" rel="self"/>
+ <link href="http://localhost:4000/"/>
+ <updated>2017-02-08T16:43:05+01:00</updated>
+ <id>http://localhost:4000</id>
+ <author>
+   <name></name>
+   <email></email>
+ </author>
+
+ 
+ <entry>
+   <title>A Shared Task for a Shared Goal - Systematic Annotation of Literary Texts</title>
+   <link href="http://localhost:4000/2013/12/28/hello-world/"/>
+   <updated>2013-12-28T00:00:00+01:00</updated>
+   <id>http://localhost:4000/2013/12/28/hello-world</id>
+   <content type="html">&lt;h1 id=&quot;preface&quot;&gt;Preface&lt;/h1&gt;
+
+&lt;p&gt;&lt;em&gt;This text has been &lt;strong&gt;submitted&lt;/strong&gt; for the next Digital Humanities Conference, to be presented as a talk in Montreal 2017.&lt;/em&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;introduction&quot;&gt;Introduction&lt;/h1&gt;
+&lt;p&gt;In this talk, we would like to outline a proposal for a &lt;em&gt;shared task&lt;/em&gt; (ST) in and for the digital humanities. In general, shared tasks are highly productive frameworks for bringing together different researchers/research groups and, if done in a sensible way, foster interdisciplinary collaboration. They have a tradition in natural language processing (NLP) where organizers define research tasks and settings. In order to cope for the specialties of DH research, we propose a ST that works in two phases, with two distinct target audiences and possible participants.&lt;/p&gt;
+
+&lt;p&gt;Generally, this setup allows both “sides” of the DH community to bring in what they can do best: Humanities scholars focus on conceptual issues, their description and definition. Computer science researchers focus on technical issues and work towards automatisation (cf. Kuhn &amp;amp; Reiter, 2015).&lt;/p&gt;
+
+&lt;p&gt;In Phase 1, participants with a strong understanding of a specific literary phenomenon (literary studies scholars) work on the creation of annotation guidelines. This allows them to bring in their expertise without worrying about feasibility of automatisation endeavours or struggling with technical issues. We will compare the different annotation guidelines both &lt;em&gt;qualitatively&lt;/em&gt;, by having an in-depth discussion during a workshop, and &lt;em&gt;quantitatively&lt;/em&gt;, by measuring inter-annotator agreement, resulting in a community guided selection of annotation guidelines for a set of phenomena. The involvement of the research community in this process guarantees that heterogenous points of view are taken into account.&lt;/p&gt;
+
+&lt;p&gt;The guidelines will then enter Phase 2 to actually make annotations on a semi-large scale. These annotations then enter a “classical” shared task as it is established in the NLP community: Various teams competitively contribute systems, whose performances will be evaluated in a quantitative manner.&lt;/p&gt;
+
+&lt;p&gt;Given the complexity of many phenomena in literature, we expect the automatisation of such annotations to be an interesting challenge from an engineering perspective. On the other hand, it is an excellent opportunity to initiate the development of tools tailored to the detection of specific phenomena that are relevant for computational literary studies.&lt;/p&gt;
+
+&lt;p&gt;This talk has two purposes:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;To discuss these ideas and collect feedback and propositions. This is also an explicit invitation to contribute in the setup of this initiative. We are also welcoming a discussion about the phenomena that should be included.&lt;/li&gt;
+  &lt;li&gt;To advertise the idea of a shared task and to invite possible participants. The success of STs relies on a certain number of participants. Given that this has never been organized in den DH community before, we want to spread this idea into the community to gather estimates of potential participants.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&quot;the-importance-of-annotations&quot;&gt;The Importance of Annotations&lt;/h1&gt;
+
+&lt;p&gt;In computational literary studies, many phenomena cannot directly be detected from the text surface. To find and categorize such phenomena as, e.g., the “narrated time” in a novel, deep text understanding, knowledge about author or literary conventions, or historical  context knowledge are required. Therefore, instances of such phenomena need to be annotated either by human experts or software that is tailored to this task.&lt;/p&gt;
+
+&lt;p&gt;Unfortunately, many theories describing interesting phenomena are very difficult to apply to real texts. It has been shown numerous times (e.g., Reiter, 2015, Musi et al., 2016) that annotating theories or concepts directly can lead to very poor &lt;em&gt;inter-annotator agreement&lt;/em&gt; (IAA): Different annotators interpret not only the text differently, but also descriptions of the theoretical concepts. While subjective annotations have their merit, studying annotations on large scale depends on their consistency, i.e., a high IAA. In addition, many theories are underspecified and examples for illustrations only. Creators of annotation guidelines often have to interpret what is meant by a certain statement and extend definitions to cover examples found in real texts.&lt;/p&gt;
+
+&lt;p&gt;Annotation guidelines serve as a mediator between a theory (that uses specialised vocabulary) and the annotators. Those guidelines often also contain re-appearing instance patterns and how they are to be annotated, or exceptions and typically a lot of examples from real texts (see below).&lt;/p&gt;
+
+&lt;p&gt;We see the &lt;strong&gt;creation of annotation guidelines&lt;/strong&gt; as one of the cornerstones of large scale text analysis in computational literary studies. Additionally, it supports systematically disciplinary discussions about concepts and thus may lead to additional findings relevant for the theoretical discourse (e.g., Meister, 1995; Gius and Jacke, submitted). Experts from literary studies are predestined for working on annotation guidelines, as annotation of literary phenomena in literary texts can be seen as a special form of close reading.&lt;/p&gt;
+
+&lt;h1 id=&quot;phase-one-annotation-guidelines&quot;&gt;Phase One: Annotation Guidelines&lt;/h1&gt;
+&lt;h2 id=&quot;the-shared-task&quot;&gt;The Shared Task&lt;/h2&gt;
+&lt;p&gt;We propose two phenomena to describe with guidelines, both from the area of narratology (Genette, 1980; Bal, 1997): Duration and focalisation. Participating teams are asked to create guidelines for one or both. In this first phase of the workshop, the participants are not bound to adhere to a specific narratological theory. The result of this phase, however, will be a fixation on a set of guidelines (that instantiate a theory). The phenomena are:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Duration&lt;/strong&gt; (cf. Scheffel et al., 2016) concerns the speed of a narration, determined by the relation between the narrated time (duration of happenings) to the narrating time (duration of the textual representation of happenings). Narrated time and narrating time can correspond or diverge, resulting in fast or slow narration. For example, in Virginia Woolf’s novel To the Lighthouse, the first and the last sections narrate one day and thus are narrated slowly, whereas the second section is narrated faster—it encompasses ten years in only about 20 pages. Explicit expressions of duration (“three weeks”) have been addressed in the TempEval shared tasks (Verhagen et al. 2010, UzZaman et al. 2013). These expressions cover only a subset of narrative duration phenomena, and systems have been tailored to news texts (cf. Strötgen and Gertz, 2016).&lt;/p&gt;
+
+&lt;p&gt;The concept of &lt;strong&gt;focalisation&lt;/strong&gt; (cf. Niederhoff, 2016) describes the relation between the information represented in the narrative and the experience and knowledge of an instance of the narrative, normally a character. Genette (1980) distinguishes three focalisation types:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Zero focalisation: The narrator knows or says more than any character knows (N&amp;gt;C)&lt;/li&gt;
+  &lt;li&gt;Internal focalisation: (N=C)&lt;/li&gt;
+  &lt;li&gt;External focalisation (N&amp;lt;C).&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Duration and focalisation represent exemplary cases of  the lower and upper bound in terms of conceptual complexity. Even though focalisation seems to be defined as clearly as duration, it is much harder to identify and determine types of focalisation.&lt;/p&gt;
+
+&lt;p&gt;Nevertheless, the automatic identification of both phenomena promises a great deal of new knowledge in literary history and historical narratology.&lt;/p&gt;
+
+&lt;p&gt;We will select a number of literary genres and/or eras as development material and provide copyright-free digitized corpora. All “official” texts (development and test sets) will be English literary texts.&lt;/p&gt;
+
+&lt;h2 id=&quot;evaluation&quot;&gt;Evaluation&lt;/h2&gt;
+&lt;p&gt;In NLP shared tasks, the predictions of the systems are compared against a fixed test set, the gold standard. Since there is no gold standard in Phase 1, we will evaluate the guidelines using an unseen data set. Each participating team annotates this set using their own guidelines, before submitting them. Submitted guidelines will be anonymized and re-distributed among the participants. Each participant is asked to annotate the evaluation data set using two other annotation guidelines. In addition, we will be collecting annotations from students.&lt;/p&gt;
+
+&lt;p&gt;The evaluation data set will thus be annotated according to each participant’s guidelines four times (1 x self, 1 x student,  2 x other participants).&lt;/p&gt;
+
+&lt;p&gt;This setup allows direct calculation of &lt;em&gt;inter-annotator agreement&lt;/em&gt;. However, IAA should be only one aspect in evaluating the guidelines, but not the only one. Therefore, we will submit a workshop at DH 2018 to discuss the submissions and select final ones. This setup also allows merging different annotation guidelines as well as adaptations according to the discussion during the workshop. Soon after the workshop, Phase 2 will commence.&lt;/p&gt;
+
+&lt;h1 id=&quot;phase-two-automatic-prediction&quot;&gt;Phase Two: Automatic Prediction&lt;/h1&gt;
+&lt;p&gt;In Phase 2 of this endeavour, the selected guidelines of Phase 1 will be annotated on a large scale by student assistants. Since we currently do not know how long, complex and involved the guidelines will be, there should be a close communication between the organizers and the team responsible for the selected guidelines.&lt;/p&gt;
+
+&lt;p&gt;As soon as texts have been annotated, they will be made accessible to participants. For the deadline in Phase 2, participants will be asked to process a new data set – one that has not been released before – and return the predicted annotations to the organizers, who will then make evaluations using standard measures (e.g., accuracy). Finally, there will be a workshop in which each participating team presents its system. This workshop is projected to be coordinated with the LaTeCH workshop series, which has taken place at ACL conferences in the past years (one of the authors of this paper has been workshop organiser in the past years).&lt;/p&gt;
+
+&lt;h1 id=&quot;technical-details-and-timeline&quot;&gt;Technical Details and Timeline&lt;/h1&gt;
+&lt;p&gt;This proposal is innovative in a number of ways: Shared tasks are a new kind of framework in the DH/H community, duration and focalisation have not been investigated in this way before and last but not least, a shared task with the goal of creating annotation guidelines has not been organized before (to our knowledge). We believe it is more important to do this right than to do this fast and that is why we are looking at a rather lengthy timeline.&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;Date&lt;/th&gt;
+      &lt;th&gt;Event&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;August 2017&lt;/td&gt;
+      &lt;td&gt;Announcement talks at DH and LaTeCH-CLfL 2017&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;November 2017&lt;/td&gt;
+      &lt;td&gt;Finalisation of Phase 1 details, submission for DH 2018, Call for participation (Phase 1)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;April 2018&lt;/td&gt;
+      &lt;td&gt;Submission deadline for guidelines&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;June 2018&lt;/td&gt;
+      &lt;td&gt;Phase 1 workshop (DH)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;August 2018&lt;/td&gt;
+      &lt;td&gt;Announcement talk for Phase 2 (LaTeCH 2018)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;October 2018&lt;/td&gt;
+      &lt;td&gt;Finalisation of Phase 2 details, submission for ACL 2019, Call for participation (Phase 2)&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;May 2019&lt;/td&gt;
+      &lt;td&gt;Submission deadline for systems for Phase 2&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;August 2019&lt;/td&gt;
+      &lt;td&gt;Phase 2 workshop (ACL/LaTeCH)&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+</content>
+ </entry>
+ 
+
+</feed>

@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<div class="posts">
+  {% for post in site.posts %}
+  <div class="post">
+    <span class="post-author">{{ post.author | join: " &bullet; " }}</span>
+    <h1>{{ post.title }}</h1>
+    <span class="post-date">{{ post.date | date_to_string }}</span>
+    {{ post.content }}
+  </div>
+  {% endfor %}
+</div>

@@ -1,1 +1,9 @@
-theme: jekyll-theme-minimal
+title:        
+tagline:      'Hyde, a Jekyll theme'
+description:  'Shared Tasks in the Digital Humanities'
+url:          http://andhyde.com
+version:      1.1.1
+author:
+  name:       ''
+  email:      ''
+permalink:    pretty
